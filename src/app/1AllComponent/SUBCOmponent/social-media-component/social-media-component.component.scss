@@ -1,0 +1,32 @@
+@import "../../../../styles.scss" ; 
+
+.social-media
+{
+    position:relative;
+    z-index: 2;
+    width: 100%; 
+    background-color: $mainbackcolor;
+    border-top: 1px solid $squarebackcolor;
+    //padding:10px ;
+    overflow:hidden;
+    .socialmedia-row
+    {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        .socialmedia-col
+        {  
+             padding: 10px;
+            p{ 
+                color: $mainWhitecolor; position:absolute ; right:10px; font-size:15px; 
+            }
+            .socialmedia-link{
+                color: $maincolor;
+                img{ width:25px; height: 25px;}  
+            }
+
+        }
+    }
+
+}

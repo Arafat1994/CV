@@ -1,0 +1,71 @@
+@import "../../../../styles.scss" ; 
+@mixin activeli($color)
+{
+    border-color: $color;  width:35px;
+}
+
+.peopleOpenion
+{
+    position:relative ; 
+    
+    .content
+    {
+        color: $mainWhitecolor;
+        //justify-content: space-around;
+        align-content: space-around;
+        margin: 25px 0px 0px 0   ;
+        flex-wrap: nowrap;
+        overflow-x: hidden ;
+        .contentdiv
+        {
+            display: none;
+        }
+        .active1
+        {
+            display: flex;
+        }
+
+        .contentData
+        {   display: flex;
+            border: 1px solid $maingraycolor;
+            border-radius:10px;
+            background-color: $squarebackcolor;
+            padding:30px 15px;
+            img{
+                width:75px;
+                height: 75px;
+                border: 2px solid $maincolor;
+                border-radius: 50%;
+               }
+            div{
+                   margin-left: 15px;
+               }
+            p{
+                font-size: 15px;
+            }
+
+        }
+
+        
+    }
+
+    .linksdiv
+        {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 ;
+            .links
+            {
+                width: 25px;
+                padding: 10px 0;
+                border-bottom: 2px solid $maingraycolor ;
+                margin: 10px;
+                &:hover{ @include activeli($mainWhitecolor) }    
+            }
+            .activelink{ @include activeli($maincolor) }
+            
+            
+        }
+}
+
+

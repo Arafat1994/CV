@@ -1,0 +1,31 @@
+<div class="container peopleOpenion ">
+    <app-title-component>
+        <ng-container class="span1">Peo</ng-container>
+        <ng-container class="span2">ple Openion </ng-container>
+    </app-title-component>
+
+    <div class=" row mr-0 content">
+
+        <div class="col-12 col-md-6 contentdiv" *ngFor="let openion of data" 
+        [class.active1]="activeView1===openion.viewnumber || activeView2===openion.viewnumber" >
+            <div class="contentData" >
+                <img [src]="openion.imgsrc" />
+                <div>
+                    <p> {{openion.article}}</p>
+                    <h3>{{openion.name}} </h3>
+                    <span class="text-secondary"> {{openion.jobtitle}} </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="linksdiv">
+
+        <a class="links" *ngFor="let link of Linkdata" [class.activelink]="activelink===link.id"   (click)="activeview($event , link.id , link.activeview1  , link.activeview2 )"> </a> 
+       
+    </div>
+
+</div> 

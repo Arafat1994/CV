@@ -1,0 +1,145 @@
+@import '../../../styles.scss'; 
+ 
+
+
+
+@mixin navbarlink($padding ) {
+    font-size: 15px;
+    text-decoration:none;
+    padding:$padding;
+    margin: 10px 0 ;
+}
+
+@mixin navbarlinkhover 
+{
+    color:$mainWhitecolor; 
+    text-decoration: none;
+}
+
+
+.contdiv
+{
+    position:fixed;
+    top:0px ; 
+    z-index: 2;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height:65px;
+    width:100%;
+    background-color:$mainbackcolor;
+    
+    .caption
+    {
+        //@extend .navbarList ;
+        display: flex;
+        align-self: flex-start;
+        width:15%;
+        border: 1px solid $mainWhitecolor;
+    }
+
+    .collabut
+    {
+        width:75%;
+        color: $maincolor; 
+        display: none ;
+        justify-content:flex-end;
+        margin-right: 15px;
+        span 
+        {
+            font-size:20px;
+            padding: 5px 10px;
+            border: 1px solid $maincolor;
+            &:hover
+            {
+                @include navbarlinkhover ; 
+            }
+        }
+        
+    }
+    
+    .profile-photo
+    {
+        width:50px;
+        height: 50px;
+        border-radius:50%;
+    }
+
+    .navbarList
+    {
+        align-self: center;
+        list-style-type: none;
+        margin-bottom: 0px;
+        height:100%;
+        color:$maincolor;
+        z-index:1;
+   
+    .list   {
+        margin:5px 0 ;
+        padding:5px ;
+        float:left;
+        align-self:stretch ;
+        //width: 100px;
+        
+        
+        &:hover
+        {
+            .dropDowndiv
+            {
+                display: block ; 
+            }
+        }        
+    }
+
+    .navbarlink
+    {
+        @include navbarlink(20px ) ; 
+        &:hover
+        {
+            @include navbarlinkhover ;
+            
+        } 
+    }
+
+    .profileLink
+    {
+        @include navbarlink(0px)
+    }
+    
+    }
+}
+
+.wi
+{
+    color: $mainWhitecolor ;
+}
+
+.active > a
+{
+    color: $mainWhitecolor ; 
+}
+
+
+.VerMenu
+{
+    flex-direction: column;
+    opacity:0;
+    display: none;
+    position:fixed;
+    height:300px;
+    right:0;
+    top: 55px;
+    width:230px;
+    align-items: flex-start;
+    background-color:$mainbackcolor; 
+    padding: 30px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+
+.dropDowndiv
+{
+    display:none;
+}

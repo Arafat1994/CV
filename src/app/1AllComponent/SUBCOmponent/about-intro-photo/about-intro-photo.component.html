@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="introAbout row" *ngFor="let intro of introdata">
+        <div class=" col-12 col-md-6 ">
+            <img class="profileimage" [src]="intro.profilephoto" />
+        </div>
+
+        <div class="col-12 col-md-6 ">
+
+            <p class="AoutPara maincolor"> {{intro.jobtitle}} </p>
+            <h1 class="my-5 font-weight-bold"> {{intro.myname}} </h1>
+            <p class="AoutPara">
+                {{intro.intro}}
+            </p>
+
+            <div class="buttonDiv">
+                <a href="./../../../assets/Arafat ALi.pdf" download class="AboutButton"
+                    (mouseover)="ishoveredfunc('download')" (mouseleave)="ishoveredfunc('download')"
+                    [@BordMove]="isdownloadhovered ? 'unhovered' : 'hovered'">
+                    Download CV
+                </a>
+
+                <a class="AboutButton" (mouseover)="ishoveredfunc('contact')" (mouseleave)="ishoveredfunc('contact')"
+                    [@BordMove]="isContacthovered ? 'unhovered' : 'hovered'" (click)="contactNavigate()">
+                    Contact ME
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

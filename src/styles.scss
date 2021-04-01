@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import"~bootstrap/dist/css/bootstrap.css" ; 
+$mainbackcolor: black ; 
+$maincolor : #d7bb4a ; 
+$mainWhitecolor:white ; 
+$maingraycolor : gray ; 
+$squarebackcolor:#0c0c0c ;
+*
+{
+    box-sizing: border-box;
+    //color: white;
+}
+
+body
+{
+ background-color: $mainbackcolor ;
+}
+
+.maincolor
+{
+    color: $maincolor;
+}
+
+body::-webkit-scrollbar
+{
+    background-color: $mainbackcolor ;  
+    width:3px;  
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color:$maincolor;
+}
+
+
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a
+{
+    color: $maincolor;
+    &:hover{
+        color: $mainWhitecolor;
+
+    }
+}

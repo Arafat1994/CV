@@ -1,0 +1,74 @@
+<div class="container contact">
+
+    
+    <app-title-component>
+        <ng-container class="span1">Cont</ng-container>
+        <ng-container class="span2">act With Me </ng-container>
+    </app-title-component>
+
+    <div class="contactdiv row m-0">
+        <div class="contactinfo col-12 col-md-4  ">
+            <div class="contactele" *ngFor="let contact of contactData ">
+                <img [src]="contact.srcimage" />
+                <p>{{contact.paragrap}}</p>
+            </div>
+        </div>
+
+        <div class="contactform col-12 col-md-8  ">
+            <form [formGroup]='form' (ngSubmit)="submit(form)">
+                <div class="form-group  row formdivs  ">
+
+
+                    <div class="col-12 col-lg-6 right">
+                        <div class="rightinput">
+                            <input class=" formitem" type="text" placeholder="Fullname" formControlName="fullname" />
+                            <div *ngIf="fullname.touched && fullname.invalid" class="valid">
+                                Fullname is required
+                            </div>
+                        </div>
+
+                        <div class="rightinput">
+                            <input class=" formitem" type="text" placeholder="Subject " formControlName="subject" />
+                            <div *ngIf="subject.touched && subject.invalid" class="valid">
+                                subject is required
+                            </div>
+                        </div>
+
+                        <div class="rightinput">
+                            <input class=" formitem" type="Email" placeholder="Email" formControlName="email" />
+                            <div *ngIf="email.touched && email.invalid" class="valid">
+                                email is required
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 left ">
+                        <div class="leftinput">
+                            <textarea class=" formitem" placeholder=" Message "
+                                formControlName="message">
+                            </textarea>
+                            <div *ngIf="message.touched && message.invalid" class="valid">
+                                message is required
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <button class="formbutton" [disabled]="form.invalid"> Send Message </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <app-social-media-component>
+        
+    </app-social-media-component>
+
+</div>

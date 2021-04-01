@@ -1,0 +1,108 @@
+
+@import '../../../../styles.scss' ;
+.introAbout
+{   
+    
+    justify-content: center;
+    align-items: center;
+    //align-content: center;
+    color:$mainWhitecolor;
+    margin:80px 0px 20px 0 ;
+    padding:10px;
+    height:450px;
+    .centerText
+    {
+        display: block;
+        margin:auto
+    }
+    
+    .profileimage
+    {
+        width:300px;
+        height:300px;
+        border: 10px solid $maincolor;
+        border-radius: 50%;
+        display: block;
+        margin:auto ;
+    }
+     
+    
+
+    .AoutPara
+    {
+        font-size: 15px;
+    }
+
+    .buttonDiv
+    { 
+        margin: 30px 0 ;
+        .AboutButton 
+    {
+        font-size:15px;
+        padding: 10px; 
+        margin: 10px;
+        color: $maincolor;
+        border:1px solid $maincolor;
+        border-radius: 10px;
+        background-color: transparent;
+        
+
+        &:hover
+        {
+            border:1px solid $mainWhitecolor;
+            color: $mainWhitecolor;
+            /*
+            animation-name:borderAni;
+            animation-duration:.5s;
+            animation-iteration-count:1;
+            animation-timing-function:ease-in;
+            */
+        }
+
+    }
+    
+
+    }
+
+//animation code done with animation.ts (borderanimation.ts) //and thats works with me right !
+    /*
+    @keyframes borderAni {
+        0%{
+            border-top:1px solid $maincolor  ;
+            border-bottom : none ;
+            border-right: none ;
+            border-left:none  ;
+        }
+
+        25%{
+            border-top:none  ;
+            border-bottom : none ;
+            border-right: 1px solid $maincolor ;
+            border-left:none  ;
+        }
+
+        50%{
+            border-top:none  ;
+            border-bottom : 1px solid $maincolor ;
+            border-right: none ;
+            border-left:none  ;
+        }
+        75%{
+            border-top:none  ;
+            border-bottom : none ;
+            border-right: none ;
+            border-left:1px solid $maincolor  ;
+        }
+    }*/
+
+
+
+
+}
+
+@media only screen and (max-width:775px)
+{
+ .introAbout{
+     height: 600px;
+ }   
+}

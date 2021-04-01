@@ -19,8 +19,12 @@
     "@angular/platform-browser": "~11.1.2",
     "@angular/platform-browser-dynamic": "~11.1.2",
     "@angular/router": "~11.1.2",
+    "angular-responsive-carousel": "^2.0.2",
+    "bootstrap": "^4.6.0",
+    "flickity": "^2.2.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "web-animations-js": "^2.3.2",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {

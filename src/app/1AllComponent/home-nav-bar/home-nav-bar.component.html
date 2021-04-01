@@ -1,0 +1,73 @@
+<div class="contdiv ">
+
+    <ul class="navbarList d-flex w-25 ">
+        <li class="list">
+            <a routerLink="/"> <img class="profile-photo" [src]='Profilephotosrc' /> </a>
+        </li>
+        <li class="list py-4"> <a routerLink="/" class="profileLink"> Name </a></li>
+    </ul>
+
+
+    <a class="collabut" (click)="ToggleEXPCOLL()" [ngClass]=" {'d-flex': Width<1105 , 'd-none': Width > 1105} ">
+        <span class="glyphicon glyphicon-tasks"> </span>
+    </a>
+
+
+    <ul class="navbarList pt-3  " [@EXPCOLL]="isExpanded ? 'EXP' : 'CoLL'"
+        [ngClass]="{'VerMenu' : Width < 1105   ,  'd-flex' : Width > 1105 }">
+
+
+        <li class="list active" [class.active]="defaultView==='About me' ">
+            <a routerLink="/" class="navbarlink" (click)="defaultViewFun('About me')"> {{listValue[0]}} <i
+                    class="glyphicon glyphicon-chevron-down"></i>
+            </a>
+            <div class="dropDowndiv">
+                <app-about-drop-down-menu> </app-about-drop-down-menu>
+            </div>
+
+        </li>
+
+        <li class="list" [class.active]="defaultView==='Resume' ">
+            <a routerLink="/Resume" class="navbarlink" (click)="defaultViewFun('Resume')"> {{listValue[1]}} <i
+                    class="glyphicon "></i> </a>
+        </li>
+
+        <li class="list" [class.active]="defaultView==='Portfilo'">
+            <a routerLink="/Portfilo" class="navbarlink" (click)="defaultViewFun('Portfilo')"> {{listValue[2]}} <i
+                    class="glyphicon glyphicon-chevron-down"></i>
+            </a>
+            <div class="dropDowndiv">
+                <app-port-filo-drop-menu> </app-port-filo-drop-menu>
+            </div>
+
+        </li>
+
+        <li class="list" [class.active]="defaultView==='Blog'">
+            <a routerLink="/Blog" class="navbarlink" (click)="defaultViewFun('Blog')"> {{listValue[3]}} <i
+                    class="glyphicon glyphicon-chevron-down"></i> </a>
+            <div class="dropDowndiv">
+                <app-blog-drop-down-menu></app-blog-drop-down-menu>
+            </div>
+        </li>
+
+        <li class="list" [class.active]="defaultView==='Contact'">
+            <a routerLink="/Contact" class="navbarlink" (click)="defaultViewFun('Contact')"> {{listValue[4]}} <i
+                    class="glyphicon "></i> </a>
+        </li>
+
+
+        <li class="list" [class.active]="defaultView==='Extra'">
+            <a routerLink="/Extra" class="navbarlink" (click)="defaultViewFun('Extra')"> {{listValue[5]}} <i
+                    class="glyphicon "></i> </a>
+        </li>
+
+        <li class="list" [class.active]="defaultView==='Social Media'">
+            <a routerLink="/Social-media" class="navbarlink" (click)="defaultViewFun('Social Media')"> {{listValue[6]}}
+                <i class="glyphicon "></i> </a>
+        </li>
+
+
+
+    </ul>
+
+</div>

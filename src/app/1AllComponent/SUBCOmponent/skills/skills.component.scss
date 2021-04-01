@@ -1,0 +1,65 @@
+@import "../../../../styles.scss" ; 
+
+$percentageList : 70 80 90 100 ;
+@each $percentage in $percentageList
+{
+    .perc-#{$percentage}
+    {
+        width:#{$percentage+'%'};
+        background-color: $maincolor;
+        border-radius: 10px;
+        //width: 50%;
+        height: 100%;
+        border: 1px; 
+        text-align: center;
+
+    }
+}
+
+.skills
+{
+    .skillsdiv
+    {
+        display: flex ;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 40px 0 ;
+        .skillscontent
+        {
+            color:$mainWhitecolor;
+           .skillsborder
+           {
+               position: relative;
+               margin: 5px;
+               .spanperc
+               {
+                   position: absolute;
+                   right: 20px;
+               }
+              
+               .skillsdetails
+               {
+                border: 1px solid $maingraycolor;
+                width: 100%;
+                border-radius: 10px;
+                height: 15px; 
+                padding: 2px;
+
+                   /* made it above 
+                   .skillspercentage
+                   {
+                    background-color: $maincolor;
+                    border-radius: 10px;
+                    width: 50%;
+                    height: 100%;
+                    border: 1px; 
+                    text-align: center;
+                   }.
+                   */
+            }
+           }
+
+        }
+    }
+}

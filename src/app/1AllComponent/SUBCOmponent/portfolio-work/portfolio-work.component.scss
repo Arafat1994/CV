@@ -1,0 +1,67 @@
+@import "../../../../styles.scss";
+
+.portfolio
+{
+    .portfolio-div{
+        display: flex;
+        justify-content:center;
+        align-content: center;
+        flex-wrap: wrap;
+        .portfolio-ele
+        {   position: relative;
+            margin: 30px 20px;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border:1px solid $maincolor;
+            border-radius: 10px;
+            .portfolio-text
+            {
+                position: absolute;
+                z-index: 1.5;
+                background-color: $maincolor;
+                color:$mainbackcolor;
+                padding: 5px 15px;
+                margin: 5px;
+                font-size: 15px;
+                border-radius: 5px;
+            }
+            .outside
+                {
+                    display:none;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    background-color: rgba($mainbackcolor,.7) ;
+                    z-index: 1;                  
+                    .outsideimage
+                    {
+                        opacity:1;
+                        width:20px; height: 20px;
+                        align-self: center;
+                    }
+                }
+            .img
+            {
+                position: absolute;
+                z-index: -1;
+                object-position: center;
+                width: 100%;
+                height: 100%; 
+            }
+
+            &:hover{
+                
+                .outside
+                {
+                    display: flex;
+                }
+                .img
+                {
+                    transform: scale(1.2 , 1.2);
+                }
+            }
+        }
+    }
+}

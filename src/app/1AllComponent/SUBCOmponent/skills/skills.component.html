@@ -1,0 +1,19 @@
+<div class="container skills">
+    <app-title-component>
+        <ng-container class="span1">Ski</ng-container>
+        <ng-container class="span2">lls </ng-container>
+    </app-title-component>
+    <div class="skillsdiv">
+        <div class="skillscontent col-12 col-sm-6" *ngFor="let skills of SkillsData">
+            <div class="skillsborder">
+                <span>{{skills.skillname}} </span>
+                 <span class="spanperc">{{skills.percentage}} </span> 
+                <div class="skillsdetails  ">
+                    <p [class]="'perc-'+skills.percentage">  </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

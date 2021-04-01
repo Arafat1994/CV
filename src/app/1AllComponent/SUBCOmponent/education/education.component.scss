@@ -1,0 +1,45 @@
+@import "../../../../styles.scss" ; 
+.education
+{
+    margin-top:40px;
+    color:white;
+    .education-info
+    {
+        margin: 10px 0 ;
+        padding: 20px;
+        .education-details
+        {
+            height: 200px;
+            padding-top:25px;
+            border-left: 1px solid $maingraycolor;
+            border-bottom: 1px solid $maingraycolor;
+            .years
+            {
+                position: relative;
+                left: -20px;
+                z-index: 1;
+                background-color:$mainbackcolor;
+                border:1px solid $maincolor;
+                border-radius: 30px;
+                padding: 10px 30px ;
+            }
+            .school
+            {
+                color: $maingraycolor;
+                font-size: 15px;
+            }
+            .header
+            {
+                margin: 20px 0 20px 40px;
+                color: $maincolor;
+            }
+            .paragraph
+            {
+                margin: 20px 0 20px 40px;
+                font-size: 15px;
+            }
+
+        }
+
+    }
+}

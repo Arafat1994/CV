@@ -1,0 +1,39 @@
+<div class="container Clients">
+
+
+    <app-title-component>
+        <ng-container class="span1">Sk</ng-container>
+        <ng-container class="span2">ills </ng-container>
+    </app-title-component>
+
+
+
+    <div class="clientrow ">
+
+        <div class="clientcontent ">
+            <carousel height=100 style="width: 100%;"class="carousel">
+                <div *ngFor="let client of ClientData" class="carousel-cell" [class]="client.class">
+                    <img class="img" [src]="client.PhotoSrc">
+                </div>
+            </carousel>
+
+            <!--.
+                <div class="prev">   
+                 <button class="prev" (click)="ShowSlide(-1)"> &#10094;</button>
+                </div>
+                <div  class=" row mr-0 clientimg " >
+                <div class="col-4 col-md-2 clientimgdiv " *ngFor="let client of ClientData">
+                    <img [src]="client.PhotoSrc" />
+                </div>
+
+            </div>    
+        </div> 
+
+        <div class="next">
+            <button class="next" (click)="ShowSlide(1)"  > &#10095; </button>
+        </div>-->
+
+
+        </div>
+
+    </div>

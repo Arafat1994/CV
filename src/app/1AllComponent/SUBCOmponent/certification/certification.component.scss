@@ -1,0 +1,45 @@
+@import "../../../../styles.scss";
+.certificate
+{
+    //margin: 25px 0;
+    .cetificatediv
+    {
+        display:flex;
+        justify-content: center;
+        align-content:space-around;
+        flex-wrap: wrap;
+        margin: 25px 0 ;
+        padding: 20px;
+
+            .certcontent
+            {
+                align-self: center;
+                padding:0px;
+                clear: both;
+                .margindiv
+                {
+                    margin-right: 15px;
+                    border-radius: 10px;
+                    background-color: $squarebackcolor;
+                    border: 1px solid $squarebackcolor;
+                    .mediaimg{
+                        width:100px;height:100px; margin-right: 20px;
+                        overflow: hidden; float: left;
+                        border: 1px;
+                        border-radius: 10px;
+                    }
+                   
+    
+                    .certdetail
+                    {
+                        padding: 20px 0 ;
+                    }
+                }
+                &:hover
+                {
+                    transform: scale(1.05,1.05);
+                    box-shadow: 2px 2px 2px 2px $squarebackcolor;
+                }
+            }
+    }
+}

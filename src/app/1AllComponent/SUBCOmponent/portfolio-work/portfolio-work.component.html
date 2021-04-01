@@ -1,0 +1,21 @@
+<div class="container portfolio">
+    
+    <app-title-component >
+        <ng-container class="span1">My P</ng-container>
+        <ng-container class="span2">ortfolio  </ng-container>
+    </app-title-component>
+
+    <div class="portfolio-div">
+        <a class="portfolio-ele " *ngFor="let portf of portfolioData " [href]="portf.href"  target="_blank" 
+       >
+        
+            <p class="portfolio-text"> {{portf.webname}} </p>
+            <div class="outside"> <img class="outsideimage" [src]="portf.iimage"/></div>
+
+            <img  class="img" [src]="portf.srcimage"/>
+        
+        </a> 
+
+    </div> 
+
+</div>

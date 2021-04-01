@@ -1,0 +1,19 @@
+<div class="container facts">
+    <app-title-component>
+        <ng-container class="span1">Fun</ng-container>
+        <ng-container class="span2"> Facts </ng-container>
+    </app-title-component>
+
+    <div class=" row facts-main">
+        <div class="col-11 col-sm-6 col-md-4 col-lg-3 " *ngFor="let fact of FactsData">
+            <div class="facts-content">
+                <img [src]="fact.PhotoSrc" />
+                <h1> {{fact.header}} </h1>
+                <p> {{fact.Paragraph}} </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

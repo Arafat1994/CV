@@ -1,0 +1,20 @@
+
+<div class="education   "> 
+    <app-title-component>
+        <ng-container class="span1">Edu</ng-container>
+        <ng-container class="span2">cationn </ng-container>
+    </app-title-component>
+
+    <div class="education-info ">
+        <div class="education-details" *ngFor="let edu of EducationData"> 
+            <span class="years"> {{edu.Years}} </span> <span class="school"> {{edu.college}} </span>
+            <h1 class="header">{{edu.department}}  </h1>
+            <p class="paragraph"> {{edu.details}} </p>
+
+        </div>
+
+    </div>
+
+    
+
+</div>

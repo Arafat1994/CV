@@ -1,0 +1,19 @@
+@import '../../../../styles.scss' ; 
+
+.dropDownUl
+{
+    padding:10px;
+    position:relative;
+    list-style-type: none;
+    width:auto;
+    z-index: 1;
+    background-color:$mainbackcolor ;
+    border: 1px solid transparent;
+    .dropDownLi
+    {
+        padding: 5px; 
+        margin: 5px 0;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}

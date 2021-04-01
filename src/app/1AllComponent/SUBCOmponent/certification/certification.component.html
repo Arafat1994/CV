@@ -1,0 +1,21 @@
+<div class="container certificate">
+    <app-title-component>
+        <ng-container class="span1">Cer</ng-container>
+        <ng-container class="span2">tifications </ng-container>
+    </app-title-component>
+
+    <div class="cetificatediv">
+        <a class="certcontent col-12  col-md-6 my-3" *ngFor="let cert of CertficateData">
+            <div class="margindiv">
+                <img class="mediaimg" [src]="cert.Photosrc" />
+                <div class="certdetail">
+                    <h1> {{cert.name}}</h1>
+                    <p> {{cert.date}}</p>
+                </div>
+            </div>
+
+        </a>
+
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+@import "../../../../styles.scss" ; 
+.page
+{
+   
+    color: white;
+    width: 100%;
+    margin-top: 150px;
+    background-color: $squarebackcolor;
+    border-top: 1px solid $maingraycolor   ;
+    border-bottom: 1px solid $maingraycolor   ;
+    
+    .pageheader
+    {
+        display:flex;
+        justify-content: center;
+        align-content:center;
+        padding: 20px;
+        height: 150px;
+        .pageheadercontent
+        {
+           font-size: 35px;
+           align-self:center;
+        }
+        .pageheadersmall
+        {
+            font-size:15px;
+            color: $maingraycolor;
+        }
+    }
+}

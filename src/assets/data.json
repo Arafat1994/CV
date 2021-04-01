@@ -1,0 +1,149 @@
+[
+    {
+        "whatido": 
+        [
+            {"imgsrc": "../../../../assets/programmer.svg", "title": "Front End Developer","content": " responsible for implementing visual and interactive elements that users engage with through their web browser when using a web application"} ,
+            {"imgsrc": "../../../../assets/web-design.svg", "title": "Web Designer","content": " responsible for designing and building the interface, navigation and aesthetic of websites for businesses and clients. "} ,
+            {"imgsrc": "../../../../assets/web-settings.svg", "title":"Network Support","content": "Installing new hardware (servers, printers, computer workstations, etc.) Setting up user accounts, permissions and passwords. Overseeing security of all systems, especially the internet, and installing antivirus protection. Fixing network faults."} ,
+            {"imgsrc": "../../../../assets/improvement.svg", "title": "Computer Maintenence","content": "Setting up hardware and installing and configure software and drivers. Maintaining and repairing technological equipment (e.g. routers) or peripheral devices."} 
+        ] 
+    }, 
+    {
+        "peopleopenion" : 
+        [
+            {"imgsrc": "../../../../assets/testimonial-1.jpg" ,"viewnumber" :"firstview"  , "name":" Billy Adams" , "jobtitle":" SoftWare Engineer " , "article":"Arafat has 2 years of experience writing web apps that span consumer productivity software to mission-critical financial trading platforms. He has extensive knowledge of front-end JavaScript and browser APIs as well as significant experience with popular frameworks and libraries like React , Redux and Angular . " },
+            {"imgsrc": "../../../../assets/testimonial-2.jpg" , "viewnumber" :"secondview" , "name":" Abdelrahman Ali" , "jobtitle":"Full Stack developer " , "article":" Arafat is a professional software engineer and front End web developer specializing in the Angular framework. He has worked with tech companies for over a 2, helping to build technology-based businesses from the ground up. He has a bachelor's degree in computer science from Mansoura College" },
+            {"imgsrc": "../../../../assets/testimonial-3.jpg" ,"viewnumber" :"thirdview"  , "name":"Haytham Ajlan" , "jobtitle":"Front End developer " , "article":"Arafat is a passionate Front End developer who started programming in grade school. After getting his bachelor's degree in computer science, he worked for two large international companies–developing mostly web applications for 1 year . Arafat is accustomed to a distributed environment and working with remote clients " }
+        ] 
+        , 
+        "links":[
+            {"id":0  , "activeview1":"firstview" , "activeview2" : "secondview" } 
+            , { "id":1 , "activeview1":"secondview" , "activeview2" : "thirdview"} , 
+            {"id" : 2 ,"activeview1":"thirdview" , "activeview2" : "firstview"}
+        ]
+    } ,
+    {
+        "Clients":
+        [
+             
+            { "id":0 ,"class":"ele-0"  , "PhotoSrc":"./../../../assets/html5.svg"},
+            {"id":1  , "class":"ele-210" ,"PhotoSrc":"../../../../assets/css-3.svg" },
+            {"id":2  ,"class":"ele-420"  ,"PhotoSrc": "../../../../assets/javascript.svg"},
+            {"id":3  ,"class":"ele-630"  ,"PhotoSrc": "../../../../assets/bootstrap.svg"},
+            {"id":4  ,"class":"ele-840"  , "PhotoSrc": "../../../../assets/sass.svg"},
+            {"id":5  ,"class":"ele-1050"  ,"PhotoSrc":"../../../../assets/jquery-sketch-symbol.svg" },
+            {"id":6  ,"class":"ele-1260"  ,"PhotoSrc": "../../../../assets/angular-mountain.svg" },
+            {"id":7  ,"class":"ele-1470"  ,"PhotoSrc": "../../../../assets/physics.svg" },
+            {"id":8  ,"class":"ele-1680" ,"PhotoSrc": "../../../../assets/sql-file-format-symbol.svg"}
+        ]
+    } ,
+    {
+        "facts":
+        [
+             
+            { "id":0 ,"header":"Happy Clients"        , "Paragraph":20    , "PhotoSrc":"./../../../assets/heart.svg"},
+            {"id":1  ,"header":"Working Hours"        , "Paragraph":1000    ,"PhotoSrc":"../../../../assets/watch.svg" },
+            {"id":2  ,"header":"Awards Won "          , "Paragraph":3    ,"PhotoSrc": "../../../../assets/favorites.svg"},
+            {"id":3  ,"header":"Coffee Consumed "     , "Paragraph":1000    , "PhotoSrc": "../../../../assets/coffee.svg"}
+        ]
+    } ,
+    {
+        "socialmedia":
+        [
+             
+            { "id":0 ,"href":"https://twitter.com/arafatali13"            , "PhotoSrc":"./../../../assets/twitter.svg"},
+            {"id":1  ,"href":"https://instagram.com/arafat.a.ali"            ,"PhotoSrc":"../../../../assets/instagram.svg" },
+            {"id":2  ,"href":"https://github.com/Arafat1994"              ,"PhotoSrc": "../../../../assets/github.svg"},
+            {"id":3  ,"href":"https://www.linkedin.com/in/arafat-a-ali-076993108/"         , "PhotoSrc": "../../../../assets/linkedin.svg"}
+        ]
+    },
+    {
+        "education":
+        [
+             
+            {"id":0 ,"Years":" 2012-2016 "            , "college":"Mansoura University"      , "department":"Computer Science" , "details":"studying of computers and computational systems. ... Computer scientists design and analyze algorithms to solve programs and study the performance of computer hardware and software."} ,
+            {"id":1 ,"Years":" 2012-2016 "            , "college":"Mansoura University"     , "department":" Computer Network" , "details":"design, engineering, and installation of networks to connect digital computers. planning and implement a network. Also  peer-to-peer networks"} ,
+            {"id":2 ,"Years":" 2012-2016 "            , "college":"Mansoura University"      , "department":"Information System" , "details":"systems with a specific reference to information and the complementary networks of hardware and software "}
+        ]
+    },
+    {
+        "experience":
+        [
+            {"id":0 ,"Years":" 2019 - present "       , "college":"E-serve Global(Zain)-Saudi" , "department":"POS Technical Support " , "details":""} , 
+            {"id":1 ,"Years":" 2018-2019 "            , "college":"Hasebat Fersawy-Saudi"      , "department":"IT Technical Support" , "details":""} ,
+            {"id":2 ,"Years":" 2016-2018 "            , "college":"Info Sys Insitute-Egypt"     , "department":"Front End Developer" , "details":""} 
+            
+           
+        ]
+    },
+    {
+        "certification":
+        [
+            {"id":1 ,"Photosrc":"../../../../assets/Angular2.png"                      , "name" :"Angular web developer"      , "date":"10 Aug 2017" , "details":""} ,
+            {"id":2 ,"Photosrc":"../../../../assets/javascriptlogo.png"            , "name":"JavaScript Developing"     , "date":"20 Oct 2019" , "details":""} 
+            
+           
+        ]
+    },
+    {
+        "skills":
+        [
+            {"id":0 , "skillname":"HTML" , "percentage":100},
+            {"id":1 , "skillname":"CSS" , "percentage":100},
+            {"id":2 , "skillname":"JAVASCRIPT" , "percentage":90},
+            {"id":3 , "skillname":"SASS", "percentage":100},
+            {"id":4 , "skillname":"JQUERY", "percentage":100},
+            {"id":5 , "skillname":"BOOTSTRAP" , "percentage":100},
+            {"id":6 , "skillname":"ANGULAR JS" , "percentage":90},
+            {"id":7 , "skillname":"REACT JS" , "percentage":70},
+            {"id":8 , "skillname":"SQL" , "percentage":90},
+            {"id":9 , "skillname":"GITHUB/GIT" , "percentage":100},
+            {"id":10 , "skillname":"FIREBASE " , "percentage":80},
+            {"id":11 , "skillname":"NETWORK SUPPORT " , "percentage":100},
+            {"id":12 , "skillname":"COMPUTER MAINTENCE " , "percentage":100}
+            
+        ]
+    },
+    {
+        "portfolio":
+        [ 
+            {"id":0 , "href":"https://ogani-5503c.web.app/" , "webname":"OGANI" , "srcimage":"../../../../assets/oga.PNG" , "iimage":"../../../../assets/outside.svg"}  ,
+            {"id":1 , "href":"https://arafat1994.github.io/Skybooking/" , "webname":"SKYBOOKING " , "srcimage":"../../../../assets/skybooking.PNG" , "iimage":"../../../../assets/outside.svg"}  ,
+            {"id":2 , "href":"https://arafat1994.github.io/Pizza/" , "webname":"PIZZA" , "srcimage":"../../../../assets/pizza.PNG" , "iimage":"../../../../assets/outside.svg"}  ,
+            {"id":3 , "href":"https://arafat1994.github.io/Restaurent/" , "webname":"RESTRAUNT" , "srcimage":"../../../../assets/del.PNG" , "iimage":"../../../../assets/outside.svg"}  ,
+            {"id":4 , "href":"https://arafat1994.github.io/Hotel/" , "webname":"HOTEL" , "srcimage":"../../../../assets/Hotel.PNG" , "iimage":"../../../../assets/outside.svg"}  
+
+        ]
+    },
+    {
+        "Contact":
+        [ 
+            {"id":0 , "srcimage":"../../../../assets/smartphone.svg" , "paragrap":"+966-50-6293772"}  ,
+            {"id":1  ,  "srcimage":"../../../../assets/location.svg" , "paragrap":"SaudiArabia - Riyadh"}  ,
+            {"id":2  ,  "srcimage":"../../../../assets/mail.svg" , "paragrap":"Arafat1994@outlook.sa"}  
+
+           
+        ]
+    } , 
+    {
+        "navbar":
+        [ 
+           [{"id":0 , "name": "Carier"}  , {"id":1  , "name":"Personal"}       , {"id":2 , "name":"Education"} ,{"id":3 , "name":"Skills"} ] , 
+
+           [{"id":0 , "name": "Facebook"} , {"id":1  , "name":"Twitter"}       , {"id":2 , "name":"Youtube"} ] ,
+
+           [{"id":0 , "name": "My Blog"}  , {"id":1  , "name":"Youtube Blog"}  , {"id":2 , "name":"Facebook Blog"} ] 
+        ]
+    }, 
+    {
+        "myintro":
+        [ 
+            {"id":0 ,"jobtitle":"Front End Developer" ,"myname":"Arafat Ali"  , "profilephoto":"./../../../assets/Arafat2222.jpg",
+            "intro":"Experienced Front end developer and Information Technology Support Engineer with a demonstrated history of working in the computer networking industry. Skilled in Web development . "
+        }  
+
+           
+        ]
+    }
+
+]

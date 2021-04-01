@@ -1,0 +1,21 @@
+
+
+<div class=" education "> 
+    <app-title-component>
+        <ng-container class="span1">Exp</ng-container>
+        <ng-container class="span2">erience </ng-container>
+    </app-title-component>
+
+    <div class="education-info ">
+        <div class="education-details" *ngFor="let exp of ExpData" > 
+            <span class="years"> {{exp.Years}} </span> <span class="school">  {{exp.college}}</span>
+            <h1 class="header"> {{exp.department}} </h1>
+            <p class="paragraph"> </p> 
+
+        </div>
+
+    </div>
+
+    
+
+</div>

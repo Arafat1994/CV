@@ -1,0 +1,20 @@
+@import "../.../../../../../styles.scss";
+ 
+.main 
+{
+    color: white ;
+    padding: 20px 0 ;
+    .maincontent
+    {
+        margin: 20x ;
+        div
+        {
+            border: 1px solid $maincolor;
+            margin:10px 0 ;
+            text-align: center;
+            font-size: 15px;
+            
+        }
+    }
+
+}
