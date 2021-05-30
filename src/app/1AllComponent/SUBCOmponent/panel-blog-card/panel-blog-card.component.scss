@@ -1,0 +1,44 @@
+
+@import "../../../../styles.scss" ; 
+@mixin headerDetails ($fontsize){
+    color:$mainWhitecolor;
+    font-size: $fontsize;
+    
+}
+
+.card
+{
+    width: 300px;
+    height: 350px;
+    border: 1px solid $maincolor;
+    border-radius: 5px;
+    background-color: transparent;
+    position: relative;
+    img{
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-bottom:1px solid $maincolor;
+    
+    }
+
+    .card-details{
+        margin:5px;
+        padding: 5px;
+        .header{@include headerDetails(15px ) ; }
+        .details{@include headerDetails(10px ) ; }
+        .date
+        {
+            position: absolute;
+            right:15px ;
+            top: 20px;
+            background-color: $maincolor;
+            color: $mainWhitecolor;
+            padding: 5px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+    }
+
+}

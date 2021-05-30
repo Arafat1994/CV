@@ -13,7 +13,11 @@ export class SocialMediaComponentComponent implements OnInit {
 
   ngOnInit(): void {
     this.getdata.getdataFun().subscribe((result)=>
-    {this.socialData =result[4].socialmedia ; }) 
+    {
+      this.socialData =result[4].socialmedia ;
+      //console.log(this.socialData) ; 
+     }) 
+    
   }
 
 }

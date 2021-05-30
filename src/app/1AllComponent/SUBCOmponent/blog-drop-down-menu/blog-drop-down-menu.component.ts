@@ -10,12 +10,14 @@ import { GetDataFromJsonFileService } from 'src/app/services/get-data-from-json-
 export class BlogDropDownMenuComponent implements OnInit {
 
   Blog; 
+  circle ; 
   constructor(private getdata : GetDataFromJsonFileService) { }
 
   ngOnInit(): void {
     this.getdata.getdataFun().subscribe((result)=>
     {this.Blog =result[11].navbar[2] ; }) 
   }
+  
 
 
  

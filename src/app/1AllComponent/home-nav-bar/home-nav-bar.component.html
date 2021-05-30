@@ -4,7 +4,7 @@
         <li class="list">
             <a routerLink="/"> <img class="profile-photo" [src]='Profilephotosrc' /> </a>
         </li>
-        <li class="list py-4"> <a routerLink="/" class="profileLink"> Name </a></li>
+        <li class="list py-4"> <a routerLink="/" class="profileLink"> Resume </a></li>
     </ul>
 
 
@@ -57,12 +57,12 @@
 
 
         <li class="list" [class.active]="defaultView==='Extra'">
-            <a routerLink="/Extra" class="navbarlink" (click)="defaultViewFun('Extra')"> {{listValue[5]}} <i
+            <a routerLink="/Panel" class="navbarlink" (click)="defaultViewFun('Extra')"> {{listValue[5]}} <i
                     class="glyphicon "></i> </a>
         </li>
 
         <li class="list" [class.active]="defaultView==='Social Media'">
-            <a routerLink="/Social-media" class="navbarlink" (click)="defaultViewFun('Social Media')"> {{listValue[6]}}
+            <a routerLink="/SignIn" class="navbarlink" (click)="defaultViewFun('Social Media')"> {{listValue[6]}}
                 <i class="glyphicon "></i> </a>
         </li>
 

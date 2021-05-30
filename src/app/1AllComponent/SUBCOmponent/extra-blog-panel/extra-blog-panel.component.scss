@@ -1,0 +1,40 @@
+@import "../../../../styles.scss" ; 
+.panelbar
+{
+    padding: 20px 0px;
+    .nav-tabs{
+        border-bottom: 0px solid transparent;
+
+       .nav-item.active > .nav-link
+        {
+            color: $mainWhitecolor;
+            background-color: $maincolor;
+            border-color: $mainbackcolor;
+        }
+
+        .nav-item
+        {
+            width: 150px;
+            text-align: center;
+            margin:10px 0 ;
+            .nav-link
+            {
+                font-size:20px;
+                font-weight: bold;
+                border: 1px solid $mainWhitecolor;
+                margin-right:5px;
+                border-radius: 5px;
+               
+                &:hover{
+                    color:$mainWhitecolor ;
+                    background-color: transparent;
+                    border: 1px solid $maincolor;
+                }
+
+                
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+@import "../../../../styles.scss" ; 
+form{
+    margin: 15px 0 ;
+    .formdiv
+    {
+        //width: 50%;
+        input , textarea
+        {
+            @extend %formitem ; 
+            margin:10px 0 ;
+
+        }
+    
+        button{
+            @extend %formbutton ; 
+
+        }
+    }
+
+    
+@media screen and (max-width:900px) {   
+    .formdiv{
+        width: 100%;
+    } 
+}
+}
+

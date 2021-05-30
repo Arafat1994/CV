@@ -45,3 +45,58 @@ a
 
     }
 }
+
+
+form
+        {
+            %formitem
+            {
+                width: 95%;
+                height:40px;
+                padding:3px;
+                color: $mainWhitecolor;
+                font-size: 15px;
+                background-color: transparent;
+                border: 1px solid $maingraycolor;
+                border-radius: 5px;
+                &:focus-within
+                {
+                    outline-color: $maincolor;
+                    border-radius: 5px;
+                }
+               
+            }
+            ::placeholder
+            {
+                color: $mainWhitecolor;
+            }
+
+            %formbutton 
+            {
+                width: 130px;
+                font-size:15px;
+                padding: 10px; 
+                margin: 10px;
+                color: $maincolor;
+                border:1px solid $maincolor;
+                border-radius: 10px;
+                background-color: transparent;
+                &:hover
+                {
+                    border:1px solid $mainWhitecolor;
+                    color: $mainWhitecolor;
+                }
+            }
+            .valid
+            {
+                background-color:red;
+                color:$mainWhitecolor;
+                width:130px;
+                height:15px;
+                text-align: center;
+                //padding: 5px;
+                //margin: 0 10px  ;
+                border-radius:10px;
+
+            }
+        }

@@ -1,0 +1,10 @@
+<div class="col-md-6 col-12 align-self-center"> 
+    <div class="card">
+        <img [src]="imageurl">
+        <div class="card-details">
+            <p class="header">  <ng-content select=".header"> </ng-content> </p>
+            <p class="details"> <ng-content select=".details"> </ng-content></p>
+            <p class="date"> <ng-content select=".date"> </ng-content></p>
+        </div>
+    </div>
+</div>

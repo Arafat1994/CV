@@ -38,6 +38,9 @@ import { PortfolioWorkComponent } from './1AllComponent/SUBCOmponent/portfolio-w
 import { ContactWithMEComponent } from './1AllComponent/SUBCOmponent/contact-with-me/contact-with-me.component';
 import { GetDataFromJsonFileService } from './services/get-data-from-json-file.service';
 import { TrytypescriptComponent } from './1AllComponent/SUBCOmponent/trytypescript/trytypescript.component';
+import { ExtraBlogPanelComponent } from './1AllComponent/SUBCOmponent/extra-blog-panel/extra-blog-panel.component';
+import { ExtraBlogBlogFormComponent } from './1AllComponent/SUBCOmponent/extra-blog-blog-form/extra-blog-blog-form.component';
+import { PanelBlogCardComponent } from './1AllComponent/SUBCOmponent/panel-blog-card/panel-blog-card.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +72,10 @@ import { TrytypescriptComponent } from './1AllComponent/SUBCOmponent/trytypescri
     SkillsComponent,
     PortfolioWorkComponent,
     ContactWithMEComponent,
-    TrytypescriptComponent
+    TrytypescriptComponent,
+    ExtraBlogPanelComponent,
+    ExtraBlogBlogFormComponent,
+    PanelBlogCardComponent
   ],
   imports: [
     BrowserModule,

@@ -13,10 +13,10 @@ const routes : Routes = [
   {path:'' , component:AboutMeComponent } , 
   {path:'Blog' , component:BlogComponent} , 
   {path:'Contact' , component:ContactComponent} , 
-  {path:'Extra' , component :ExtraComponent } , 
+  {path:'Panel' , component :ExtraComponent } , 
   {path:'Portfilo' , component:PortfiloComponent} , 
   {path:'Resume' , component:ResumeComponent} , 
-  {path:'Social-media' , component:SocialMediaComponent} , 
+  {path:'SignIn' , component:SocialMediaComponent} , 
   {path:'**' , component:NonComponen404Component}
 ];
 

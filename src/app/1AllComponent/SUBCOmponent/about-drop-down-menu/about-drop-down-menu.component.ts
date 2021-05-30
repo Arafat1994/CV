@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { GetDataFromJsonFileService } from 'src/app/services/get-data-from-json-file.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { GetDataFromJsonFileService } from 'src/app/services/get-data-from-json-
 })
 export class AboutDropDownMEnuComponent implements OnInit {
 
-  About  ; 
+  About ; 
 
   constructor( private getdata : GetDataFromJsonFileService) { }
 

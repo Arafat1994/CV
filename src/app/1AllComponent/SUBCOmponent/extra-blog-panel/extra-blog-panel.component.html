@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="panelbar">
+        <ul class="nav nav-tabs " role="tablist">
+
+            <li class="nav-item " *ngFor="let panel of panelCOntent"
+                [ngClass]="{ 'active' : panel.name === defaultview }">
+
+                <a class="nav-link " data-toggle="tab" [href]="panel.href" (click)="Setview(panel.name)"> {{panel.name}}
+                </a>
+
+            </li>
+
+        </ul>
+        <div [ngSwitch]="defaultview">
+            <div *ngSwitchCase="'blog'">
+                <app-extra-blog-blog-form> </app-extra-blog-blog-form>
+            </div>
+            <div *ngSwitchCase="'portfolio'"> portfolios </div>
+            <div *ngSwitchCase="'skills'"> skillss </div>
+
+        </div>
+
+        <!--<div class="tab-content"> 
+
+            <div  class="container  tab-pane" *ngFor="let panel of panelCOntent" 
+            [id]="panel.name"  [ngClass]="{ 'active' : panel.name === defaultview }" >
+
+              <div *ngIf="defaultview===blog">  blog</div>
+              <div *ngIf="defaultview===portfolio"> portfolio  </div>
+
+            </div>
+
+            
+
+        </div>-->
+    </div>
+
+</div>

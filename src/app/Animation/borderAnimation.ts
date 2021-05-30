@@ -17,7 +17,6 @@ export const BorderMove=trigger('BordMove' ,
 
     state('hovered' , style({})) , 
     state('unhovered' , style({})),
-
     transition('unhovered=>hovered' , [ useAnimation(movAni)]) 
 
 ]

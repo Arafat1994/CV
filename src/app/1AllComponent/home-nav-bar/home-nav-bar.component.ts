@@ -12,7 +12,7 @@ import { WidthServiceService } from 'src/app/services/width-service.service';
 
 export class HomeNavBarComponent implements OnInit {
 
-  listValue = ['About me' , 'Resume' , 'Portfilo' , 'Blog' , 'Contact' ,'Extra' , 'Social Media'] ; 
+  listValue = ['About me' , 'Resume' , 'Portfilo' , 'Blog' , 'Contact' ,'Panel' , 'SignIn'] ; 
   Profilephotosrc="./../../../assets/online-resume.png" ;
   isExpanded : boolean = false ; 
   defaultView="About me" ;

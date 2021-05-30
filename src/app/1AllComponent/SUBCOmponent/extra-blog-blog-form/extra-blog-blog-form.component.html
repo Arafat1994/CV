@@ -1,0 +1,33 @@
+<div class="container row "> 
+
+
+    <form  class="col-md-6 col-12"#blogform="ngForm" (ngSubmit)="sendData(blogform)">
+        
+        <div *ngIf="data.invalid" class="valid"> Missing data required   </div>
+        <div class="formdiv" ngModelGroup="data" #data="ngModelGroup">
+
+            <input  type="text" name="header" #header="ngModel" [(ngModel)]="data.header" placeholder="Enter Blog Header" required />
+
+            <input type="datetime-local" name="date" #date="ngModel" [(ngModel)]="data.date" placeholder="Enter Blog Date" required/>
+
+            <input type="url" name="imageurl" #imageurl="ngModel" [(ngModel)]="data.imageurl" placeholder="Enter Blog ImageUrl" required /> 
+
+            <textarea type="text" name="details" #details="ngModel" [(ngModel)]="data.details" placeholder="Enter Blog Article " required >  </textarea>
+
+            <button [disabled]="blogform.invalid" > Send data </button>
+            <button type="reset"  >  Reset </button> 
+
+
+        </div>
+    
+    </form>
+
+    
+    <app-panel-blog-card [imageurl]="data.imageurl">
+        <ng-container class="header"> {{data.header}}</ng-container>
+        <ng-container class="details"> {{data.details}}</ng-container>
+        <ng-container class="date"> {{data.date}}</ng-container>
+    </app-panel-blog-card>
+
+    
+</div>
