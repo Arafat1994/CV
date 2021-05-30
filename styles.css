@@ -8535,5 +8535,16 @@ a {
 a:hover {
   color: white;
 }
+form ::placeholder {
+  color: white;
+}
+form .valid {
+  background-color: red;
+  color: white;
+  width: 130px;
+  height: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map*/

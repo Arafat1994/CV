@@ -144,6 +144,17 @@
 
            
         ]
+    }, 
+    { 
+        "panelBlogHeader":
+        [ 
+            {"id":0 ,"href":"#blog" ,"name":"blog"} , 
+            {"id":1 ,"href":"#portfolio" ,"name":"portfolio"} ,
+             {"id":2 ,"href":"#skills" ,"name":"skills"} 
+
+           
+        ]
     }
+    
 
 ]
